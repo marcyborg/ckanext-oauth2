@@ -177,7 +177,7 @@ class OAuth2Helper(object):
         # In CKAN can exists more than one user associated with the same email
         # Some providers, like Google and FIWARE only allows one account per email
         user = None
-        users = model.User.get(user_name)
+        user = model.User.get(user_name)
        # if len(users) == 1:
        #     user = users[0]
 

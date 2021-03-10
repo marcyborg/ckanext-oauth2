@@ -178,8 +178,8 @@ class OAuth2Helper(object):
         # Some providers, like Google and FIWARE only allows one account per email
         user = None
         users = model.User.get(user_name)
-        if len(users) == 1:
-            user = users[0]
+       # if len(users) == 1:
+       #     user = users[0]
 
         # If the user does not exist, we have to create it...
         if user is None:
